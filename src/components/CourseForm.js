@@ -25,7 +25,7 @@ const CourseForm = () => {
            addCourse(state)}}>
             <td>
            Credit :
-        <select className = "bg-blue-100 rounded-3xl p-1  hover:bg-red-200" onChange = { e => 
+        <select className = "bg-green-100 rounded-3xl p-1  hover:bg-yellow-200" onChange = { e => 
             //setInputData({...inputData,crd: e.currentTarget.value}) 
             dispatch({type : 'setcrd',value : e.currentTarget.value})
           }>
@@ -36,7 +36,7 @@ const CourseForm = () => {
           </td>
           <td>
            Grade :
-          <select className = "bg-blue-100 rounded-3xl p-1  hover:bg-red-200" onChange = { e => 
+          <select className = "bg-green-100 rounded-3xl p-1  hover:bg-yellow-200" onChange = { e => 
            //setInputData({...inputData,grd: e.currentTarget.value}) 
            dispatch({type : 'setgrd',value : e.currentTarget.value})
           }>
@@ -47,7 +47,7 @@ const CourseForm = () => {
           </td>
           <td>
           ID :
-          <input className = "bg-blue-100 rounded-3xl p-1  hover:bg-red-200" type="text" onChange = { e => 
+          <input className = "bg-green-100 rounded-3xl p-1  hover:bg-yellow-200" type="text" onChange = { e => 
            // setInputData({...inputData,name: e.currentTarget.value}) 
            dispatch({type : 'setname',value : e.currentTarget.value})
           }/>
