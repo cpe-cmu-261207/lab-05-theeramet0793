@@ -24,40 +24,40 @@ function App() {
    */
   function calculateGPA(cc) {
     // TODO
-    var Real_GPA = 0
-    var Real_CRE  = 0 
+    var r_gpa = 0
+    var r_cre  = 0 
     var cal_gpa = 0
     cc.forEach((item) => {
       switch(item.grd){
         case 'A' :
-          Real_GPA = 4
+          r_gpa = 4
           break
         case 'B+' :
-          Real_GPA = 3.5
+          r_gpa = 3.5
           break
         case 'B' :
-          Real_GPA = 3
+          r_gpa = 3
           break
         case 'C+' :
-          Real_GPA = 2.5
+          r_gpa = 2.5
           break
         case 'C' :
-          Real_GPA = 2
+          r_gpa = 2
           break
         case 'D+' :
-          Real_GPA = 1.5
+          r_gpa = 1.5
           break
         case 'D' :
-          Real_GPA = 1
+          r_gpa = 1
           break
         case 'F' :
-          Real_GPA = 0
+          r_gpa = 0
           break
       }  
-      Real_CRE += Number(item.crd) 
-      cal_gpa += Real_GPA * Number(item.crd)
+      r_cre += Number(item.crd) 
+      cal_gpa += r_gpa * Number(item.crd)
     });
-    setGPA(cal_gpa / Real_CRE) 
+    setGPA(cal_gpa / r_cre) 
   }
 
   /**
@@ -104,7 +104,7 @@ function App() {
       </div>
       {/* TODO add course input form */}
       {/* TODO display calculated GPA */}
-      <p className = "bg-red-100 rounded-3xl p-1 text-center hover:bg-red-200">GPA : {GPA}</p>
+      <p className = "bg-green-100 rounded-3xl p-1 text-center hover:bg-green-200">GPA : {GPA}</p>
     </div>
   </sample.Provider>
   );

@@ -5,5 +5,12 @@ const CourseCard = (props) => {
     </>
   );
 };
+const onRemoveTodo = () => {
+  //dispatch delete action
+  dispatch({
+    type: "DELETE_TODO",
+    payload: id,
+  });
+};
 
 export default CourseCard;
